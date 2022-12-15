@@ -1,0 +1,59 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+body{
+    font-family: normal;
+   }
+
+header{
+    height: 110px;
+    background: rgb(92, 9, 9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+
+}
+
+ul li a{
+ padding: 0 20px;   
+ text-decoration: none;
+ color: azure;
+ display: inline;
+}
+
+/*I learned this section from Youtube*/
+
+li ::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: tan;
+    transition:all .5s;
+}
+li a:hover::after{
+    width: 100%;
+}
+
+section{
+    display: flex;
+    box-shadow: none;
+    margin: auto;
+}
+
+
+main{
+    display: flex;
+    height: 120vh;
+    align-items: center;
+    justify-content: center;
+}
+
